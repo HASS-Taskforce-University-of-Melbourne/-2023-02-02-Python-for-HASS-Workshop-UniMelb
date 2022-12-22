@@ -9,7 +9,7 @@ country: "au"
 language: "en"    
 latitude: "-37.815338"        
 longitude: "144.963226"      
-humandate: "02 & 09 February February"    
+humandate: "02 & 09 February"    
 humantime: "13.00 - 17.00"    
 startdate: 2022-02-02      
 enddate: 2022-02-09        
