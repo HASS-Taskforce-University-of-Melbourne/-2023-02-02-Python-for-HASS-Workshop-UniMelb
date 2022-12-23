@@ -66,7 +66,7 @@ displayed if the 'eventbrite' field in the header is not set.
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
 <iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+  src="https://www.eventbrite.com/e/python-for-humanities-arts-and-social-sciences-tickets-490349256827"
   frameborder="0"
   width="100%"
   height="280px"
