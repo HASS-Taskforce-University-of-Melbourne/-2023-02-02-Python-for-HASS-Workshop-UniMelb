@@ -32,7 +32,7 @@ carpentry: "dc"
 # dc-geospatial: for Data Carpentry Geospatial
 # swc-inflammation: for Software Carpentry based on the inflammation dataset
 # swc-gapminder: for Software Carpentry based on the Gapminder dataset
-# curriculum: "dc-socsci"
+curriculum: "dc-socsci"
 
 # If there is both an R and python official version of a curriculum
 # (as listed on https://software-carpentry.org/lessons/ and
@@ -53,21 +53,6 @@ pilot: true
 # pages are included in the README:
 # https://github.com/carpentries/workshop-template#creating-extra-pages
 title: "Python for HASS"
-
-#------------------------------------------------------------
-#Incubator workshop settings (only relevant for workshops teaching a lesson
-#in The Carpentries Incubator).
-
-#For an Incubator workshop, uncomment the line below and add the URL of the lesson site.
-incubator_lesson_site: "https://carpentries-incubator.github.io/python-humanities-lesson/"
-
-#For an Incubator workshop, uncomment the line below and add the URL of your pre-workshop survey
-incubator_pre_survey: "https://carpentries.typeform.com/to/wi32rS?slug="
-
-#For an Incubator workshop, uncomment the line below and add the URL of your post-workshop survey
-incubator_post_survey: "https://carpentries.typeform.com/to/UgVdRQ?slug="
-#
-#------------------------------------------------------------
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
