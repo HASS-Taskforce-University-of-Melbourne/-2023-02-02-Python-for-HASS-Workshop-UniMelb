@@ -30,6 +30,33 @@ double quotation marks around the value, unless specified otherwise.
 And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
 
+
+{% comment %}
+8< ============= For a workshop delete from here =============
+For a workshop please delete the following block until the next dashed-line
+{% endcomment %}
+
+
+<div class="alert alert-danger">
+This is the workshop template. Delete these lines and use it to
+<a href="https://carpentries.github.io/workshop-template/customization/index.html">customize</a>
+your own website. If you are running a self-organized workshop or have not put
+in a workshop request yet, please also fill in
+<a href="{{site.amy_site}}/forms/self-organised/">this workshop request form</a>
+to let us know about your workshop and our administrator may contact you if we
+need any extra information.
+If this is a pilot workshop for a new lesson,
+set the `pilot` field to `true` in `_config.yml`.
+For workshops teaching a lesson in The Carpentries Incubator,
+remember to uncomment the `incubator_lesson_site`, `incubator_pre_survey`, and `incubator_post_survey`
+fields in `_config.yml`
+</div>
+
+{% comment %}
+8< ============================= until here ==================
+{% endcomment %}
+
+
 {% comment %}
 Check DC curriculum
 {% endcomment %}
@@ -66,7 +93,7 @@ displayed if the 'eventbrite' field in the header is not set.
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
 <iframe
-  src="https://www.eventbrite.com/e/python-for-humanities-arts-and-social-sciences-tickets-490349256827"
+  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
   width="100%"
   height="280px"
@@ -352,7 +379,15 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="schedule">Schedule</h2>
 
-{% include custom-schedule.html %}
+{% if site.carpentry == "swc" %}
+{% include swc/schedule.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/schedule.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/schedule.html %}
+{% elsif site.carpentry == "incubator" %}
+This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
+Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
 {% endif %}
 
 {% comment %}
