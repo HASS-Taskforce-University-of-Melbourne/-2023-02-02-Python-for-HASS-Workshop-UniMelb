@@ -10,7 +10,7 @@ language: "en"
 latitude: "-37.815338"        
 longitude: "144.963226"      
 humandate: "02 & 09 February"    
-humantime: "13.00 - 17.00"    
+humantime: "13.00 - 17.00 AEST"    
 startdate: 2022-02-02      
 enddate: 2022-02-09        
 instructor: ["Mar Quiroga", "Jean Linis-Dinco", "Jair  Garcia Mendoza"] 
